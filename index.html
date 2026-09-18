@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Champions | Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="intro" class="page active">
+    <div class="stadium-overlay"></div>
+
+    <div class="intro-content">
+      <p class="small-title">A SPECIAL CELEBRATION</p>
+      <h1>Ready for the<br>Biggest Hit?</h1>
+
+      <div class="cricket-scene">
+        <img src="media/batsman.png" class="batsman" alt="Cricket batsman">
+        <img src="media/ball.png" class="ball" alt="Cricket ball">
+      </div>
+
+      <p class="intro-hint">Tap the button to start the celebration</p>
+      <button class="main-btn" id="startBtn">🏏 HIT THE BALL</button>
+    </div>
+
+    <div id="celebration" class="celebration hidden">
+      <div class="popper left">🎉🎊</div>
+      <div class="popper right">🎊🎉</div>
+      <div class="explosion">💥✨🎆✨💥</div>
+      <p>THE LEGENDS ARE HERE!</p>
+      <h1>HAPPIEST BIRTHDAY</h1>
+      <h2>VASANTHAAA ❤️ & YENKATESH 💙</h2>
+      <div id="confetti"></div>
+      <button class="main-btn" id="enterBtn">ENTER OUR MEMORIES 🏆</button>
+    </div>
+  </div>
+
+  <div id="gifts" class="page">
+    <div class="page-background"></div>
+
+    <header>
+      <p class="small-title">WELCOME TO THE MEMORIES' WORLD</p>
+      <h1>Choose Your Gift 🎁</h1>
+      <p>Three boxes. Countless memories. One special birthday.</p>
+    </header>
+
+    <div class="gift-container">
+
+      <div class="gift" data-card="card1">
+        <div class="gift-lid">🎀</div>
+        <div class="gift-body">
+          <span>2021–2024</span>
+          <small>OPEN ME 🎁</small>
+        </div>
+      </div>
+
+      <div class="gift" data-card="card2">
+        <div class="gift-lid">🎀</div>
+        <div class="gift-body">
+          <span>SPORTS LOVERS</span>
+          <small>OPEN ME 🎁</small>
+        </div>
+      </div>
+
+      <div class="gift" data-card="card3">
+        <div class="gift-lid">🎀</div>
+        <div class="gift-body">
+          <span>PRINCESS 👑</span>
+          <small>OPEN ME 🎁</small>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="main-btn memories-btn" id="memoriesBtn">
+      🎥 MEMORIES CHUDAMU RA
+    </button>
+  </div>
+
+  <div id="card1" class="page card-page">
+    <div class="page-background"></div>
+    <div class="memory-card">
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+      <h1>2021–2024 💙</h1>
+
+      <div class="photo-row">
+        <img src="media/vasanth.jpg" alt="Vasanth">
+        <img src="media/yenkatesh.jpg" alt="Yenkatesh">
+      </div>
+
+      <p>
+        Ee 3 journey lo mitho time spend chesindhi takkuva kani
+        memories create ayyindhi mataram chala ekkuva.
+        Miru iddaru oka role model.
+        Okallu denikaina ready vachesta antaru,
+        inkokallu last varaku vachi hand istharu.
+        Sare ley, ivanni enduku kani oka chinna memory undhi,
+        andhukey chepputunna.
+        Sare ley, ee page nunchi back vachi next page ki velladam pada.
+      </p>
+
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+      <button class="back-btn" data-back="gifts">Sare Podama ❤️</button>
+    </div>
+  </div>
+
+  <div id="card2" class="page card-page">
+    <div class="page-background"></div>
+    <div class="memory-card">
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+      <h1>SPORTS LOVERS 🏏🤼</h1>
+
+      <img class="card-photo" src="media/kabaddi.jpg" alt="Kabaddi court">
+
+      <p>
+        Mivalla nenu sports kosam chala telusukuna,
+        ela untadhi enti ani.
+        Kani miru sports lo unte asala phone ey patinchukoru
+        ra babu.
+        Edhi chalu sarullu face chesa nenu,
+        hurt ayyanu kuda.
+        Ila next time cheyakudadhu okay na?
+        So danikosame ee box dedicate chestunna.
+        Chalu, inka idhi kuda epudho kinda oka video pettanu
+        mikosam, chudandi.
+      </p>
+
+      <video controls class="video-player">
+        <source src="media/sports-video.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+      <button class="back-btn" data-back="gifts">
+        Off Ayyipoyindhi Gani Bayatiki Vachi ❤️
+      </button>
+    </div>
+  </div>
+
+  <div id="card3" class="page card-page">
+    <div class="page-background"></div>
+    <div class="memory-card">
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+      <h1>PRINCESS 👑</h1>
+
+      <img class="card-photo" src="media/princess.jpg" alt="Special memory">
+
+      <p>
+        Nenu chala happy ga feel avutunna mi lanta manchi friends
+        dorikinanduku.
+        Nenu em cheppina cheyadaniki mundhuku vachinanduku
+        thank you so much and love you a lot both of you.
+        Miru happy ga undali, mi dream ni achieve chestu
+        nannu kuda andhilo oka part ni chesukuntaru ani
+        anukuntunna.
+
+        And finallyyy happieest birthday both of youu!
+        Nenu eppudhu miku oka manchi memory ga gurthu undipovali.
+        Idhi mi princess mikosam rasina oka chinna memory.
+
+        Sare ley, mari ekkuva cheppesa.
+        Bayatiki podamu ra ❤️
+      </p>
+
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+      <button class="back-btn" data-back="gifts">
+        Chalu Ley, Bayatiki Podamu Ra 💙
+      </button>
+    </div>
+  </div>
+
+  <div id="memories" class="page card-page">
+    <div class="page-background"></div>
+    <div class="memory-card final-card">
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+      <h1>OUR MEMORIES 🎥</h1>
+
+      <video controls class="video-player">
+        <source src="media/memories.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+
+      <p>
+        Mikosam oka chinna website chesanu.
+        Na work busy life lo concentrate pettaledhu ekkuva,
+        so eylla unna happy ga feel avandhi.
+
+        And finally once again happieest birthday my boysss!
+        See you on 20-09-2026.
+        Bye bye ❤️
+      </p>
+
+      <h2>With Love, Your Princess ❤️</h2>
+      <div class="hearts">♡ ♥ ♡ ♥ ♡</div>
+
+      <button class="back-btn" data-back="gifts">
+        BACK TO GIFTS 🎁
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
