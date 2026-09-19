@@ -42,7 +42,7 @@ body {
       rgba(245, 248, 255, 0.82),
       rgba(232, 220, 255, 0.82)
     ),
-    url("media/stadium.jpg") center/cover;
+    url("stadium.jpg") center/cover;
 }
 
 .stadium-overlay,
@@ -55,7 +55,7 @@ body {
       rgba(255, 255, 255, 0.88),
       rgba(239, 232, 255, 0.85)
     ),
-    url("media/kabaddi.jpg") center/cover;
+    url("kabaddi.jpg") center/cover;
   z-index: -1;
 }
 
